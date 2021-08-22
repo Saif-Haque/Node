@@ -1,2 +1,3 @@
 # Node
-NodeJS &amp; MySQL Infrastructure setup on Oracle Cloud Infrastructure 
+NodeJS & MySQL Infrastructure setup on Oracle Cloud Infrastructure 
+
