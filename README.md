@@ -1,55 +1,56 @@
 # Node
-NodeJS & MySQL Infrastructure setup on Oracle Cloud Infrastructure.
+## NodeJS & MySQL Infrastructure setup on Oracle Cloud Infrastructure.
 
 Here is a simplified digram of Linux Infrastructure set up required for the NodeJS and MySql set up 
 
 ![image](https://user-images.githubusercontent.com/89349920/130369775-5f0a6e41-a06b-498c-8557-afbe0f585d89.png)
 
-Free Tier: Install Node Express on an Oracle Linux Instance
+### Free Tier: Install Node Express on an Oracle Linux Instance
 
 In this tutorial, you use an Oracle Cloud Infrastructure Free Tier account to set up an Oracle Linux compute instance. Then, you install a Node Express application and access your new app from the internet. Finally, this tutorial covers all the steps necessary to set up a virtual network for your host and connect the host to the internet.
 
-Key tasks include how to:
+**Key tasks include how to:**
 
-Set up a compartment for your development work.
+- Set up a compartment for your development work.
 
-Install your Oracle Linux instance and connect it to your Virtual Cloud Network (VCN).
+- Install your Oracle Linux instance and connect it to your Virtual Cloud Network (VCN).
 
-Set up an Oracle Cloud Infrastructure virtual cloud network and related network services required for your host to connect to the internet.
+- Set up an Oracle Cloud Infrastructure virtual cloud network and related network services required for your host to connect to the internet.
 
-Set up ssh encryption keys to access your Oracle Linux Server.
+- Set up ssh encryption keys to access your Oracle Linux Server.
 
-Configure ingress rules for your VCN.
+- Configure ingress rules for your VCN.
 
-Configure NodeJS with an Express framework on your instance.
+- Configure NodeJS with an Express framework on your instance.
 
-For additional information 
+**For additional information** 
 
-Request and Manage Free Oracle Cloud Promotions
+Request and Manage Free Oracle Cloud Promotion
 https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/signingup.htm
 
 
 Launching your first Linux instance
 https://docs.oracle.com/en-us/iaas/Content/GSG/Reference/overviewworkflow.htm
 
-o successfully complete this tutorial, you must have the following:
+**To successfully complete this tutorial, you must have the following**
 
-Requirements
+**Requirements**
 
 An Oracle Cloud Infrastructure Free Tier account. Start for Free ( check the above link).
 A MacOS, Linux, or Windows computer with ssh support installed.
 
 1. Set up a Compartment for Development
+
 Configure a compartment for your development.
 
-Create a Compartment
-Create a compartment for the resources that you create in this tutorial.
+- Create a Compartment
+- Create a compartment for the resources that you create in this tutorial.
 
-Log in to the Oracle Cloud Infrastructure Console.
+- [x] Log in to the Oracle Cloud Infrastructure Console. 
 
-Open the navigation menu and click Identity & Security. Under Identity, click Compartments.
+- [x] Open the navigation menu and click Identity & Security. Under Identity, click Compartments.
 
-Click Create Compartment.
+- [x] Click Create Compartment.
 
 Fill in the following information:
 
@@ -70,7 +71,7 @@ Creates a VCN with the required subnet and components needed to connect your Ora
   
 Creates an ssh key pair you use to connect to your instance.
   
-  Review Installation Steps
+ - [x] Review Installation Steps
 
   To get started installing your instance with the Create a VM Instance wizard, follow these steps:
 
