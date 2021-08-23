@@ -1,5 +1,5 @@
 # Node
-## NodeJS & MySQL Infrastructure setup on Oracle Cloud Infrastructure.
+## NodeJS & MySQL setup on Arm based processor on Oracle Cloud Infrastructure.
 
 Here is a simplified digram of Linux Infrastructure set up required for the NodeJS and MySql set up 
 
@@ -93,9 +93,12 @@ Enter a value for the name or leave the system supplied default.
 
 Placement
 
-Availability domain: AD-1
+Availability domain: AD-3
 Capacity type: On-demand capacity.
 Fault domain: Oracle chooses the best placement.
+  
+  ![image](https://user-images.githubusercontent.com/89349920/130436891-542ad34e-c0b7-44be-ba1f-28a5416ec93a.png)
+
   
   ![image](https://user-images.githubusercontent.com/89349920/130370447-1d0ae23c-c095-4854-b37c-9ee7eb592518.png)
 
@@ -104,19 +107,46 @@ Fault domain: Oracle chooses the best placement.
   ![image](https://user-images.githubusercontent.com/89349920/130370473-b9587127-a0f1-4bd5-bd23-191fc4503cce.png)
 
   
-Image
+Image & Shape
+  
+  - [X] Click on Edit On the image and shape 
+  
+  ![image](https://user-images.githubusercontent.com/89349920/130441923-f79ff002-cb93-4901-93d6-091fd7f828db.png)
+
+
+  
+- [x] Click on Change shape
+  
+  ![image](https://user-images.githubusercontent.com/89349920/130440367-8116627c-0265-48cb-a946-35f12a0752d2.png)
+
+- [x] Select 
+  
+  Ampere - Arm based processor 
+ 
+  ![image](https://user-images.githubusercontent.com/89349920/130440593-cd9acdbe-0dfb-449e-ae85-1e3e374fcbba.png)
+  
+  - [x] Click on the image : VM.Standard.A1.Flex
+  - [x] Adjust the size of Number of OCPUs : 4 
+  - [x] Amount of Memory(GB) : 24 ( This will get adjusted automatically based on the OCPUs selection)
+  - [x] Click on Select Shape
+  
+  Note : In Always Free tier - 4 OCPUs/24GB is the maximum limit.
+  
+  ![image](https://user-images.githubusercontent.com/89349920/130440811-5ffb27c6-432c-4cb3-807d-ba3d2deee64d.png)
+  
+Here is the summary of the Image and Shape selection 
 
 Image: Oracle Linux 7.9
-Image build: 2020.11.10-1
+Image build:  2021.07.27-0
 
 Shape
 
 Shape: VM.Standard.A1.Flex
 OCPU count: 4
 Memory (GB): 24
-Network bandwidth (Gbps): 0.48
+Network bandwidth (Gbps): 4
   
-  ![image](https://user-images.githubusercontent.com/89349920/130370507-7f202c9f-d174-4525-ad27-13fc730772f5.png)
+
 
 5. Review the Networking settings. Take the default values provided by the wizard.
   ![image](https://user-images.githubusercontent.com/89349920/130370536-77bc2ccc-7d3a-48c3-abaa-0b84620a5137.png)
