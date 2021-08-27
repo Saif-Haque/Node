@@ -260,7 +260,7 @@ Now start the docker service
 
 Update privilage for the default oracle account 'opc' to run the docker service
   
-```sudo usermod -a -G docker opc``
+```sudo usermod -a -G docker opc```
   
 To check the docker process is running you must logoff the session and login again ( using ssh)
 
