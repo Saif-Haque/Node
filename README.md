@@ -361,7 +361,7 @@ Once the server is ready, you can run the mysql client within the MySQL Server c
   
 When asked, enter the generated root password (see the instructions above on how to find it). Because the ```MYSQL_ONETIME_PASSWORD``` option is true by default, after you have connected a ```mysql``` client to the server, you must reset the server root password by issuing this statement:
   
-```docker log mysql```
+```docker logs mysql```
 ```docker logs 2>&1 | grep GENERATED```
 ```docker exec -it mysql1 mysql -uroot -p``` - enter GENERATED ROOT PASSWORD
   
